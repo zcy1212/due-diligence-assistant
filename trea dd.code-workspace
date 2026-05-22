@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "trea dd",
+			"path": "."
+		},
+		{
+			"name": "dd",
+			"path": "../dd"
+		}
+	],
+	"settings": {}
+}

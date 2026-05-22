@@ -1,0 +1,47 @@
+{
+  "name": "尽调小助手",
+  "version": "1.0.0",
+  "description": "法律尽职调查全流程工具，支持批量解析PDF/Word尽调文件并提取关键信息生成项目表，AI评估生成尽调报告与待补充材料清单",
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "尽职调查",
+    "法律",
+    "PDF解析",
+    "Word解析",
+    "Excel"
+  ],
+  "dependencies": {
+    "python": ">=3.8",
+    "packages": [
+      "PyPDF2>=3.0.0",
+      "PyMuPDF>=1.23.0",
+      "python-docx>=1.1.0",
+      "openpyxl>=3.1.0"
+    ]
+  },
+  "directories": {
+    "skills": ".claude/skills",
+    "tools": "tools",
+    "templates": "templates",
+    "input": "input",
+    "output": "output",
+    "temp": "temp"
+  },
+  "files": [
+    "CLAUDE.md",
+    "README.md",
+    "requirements.txt",
+    "INSTALL.md",
+    ".claude/skills/尽调小助手.md",
+    "tools/file_reader.py",
+    "tools/excel_writer.py",
+    "tools/report_writer.py",
+    "templates/报告模板.txt",
+    "templates/项目表示例.xlsx"
+  ],
+  "scripts": {
+    "install": "pip install -r requirements.txt",
+    "clean": "rm -rf temp/* output/*"
+  }
+}
